@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Brazil - Your Guide to Brazilian Culture, Language & Travel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#009c3b">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Discover Brazil">
+    <link rel="apple-touch-icon" href="images/icon-192x192.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Discover Brazil Logo" id="logo-img">
+                <h1>Discover Brazil</h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#regions">Regions</a></li>
+                <li><a href="#language">Portuguese</a></li>
+                <li><a href="#flights">Flights</a></li>
+                <li><a href="#travel-info">Travel Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Brazil</h1>
+                <p>Discover the vibrant culture, learn essential Portuguese phrases, and plan your journey to South America's largest country</p>
+                <div class="hero-buttons">
+                    <a href="#regions" class="btn primary">Explore Regions</a>
+                    <a href="#language" class="btn secondary">Learn Portuguese</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Cultural Regions</h3>
+                <p>Explore Brazil's diverse regions, each with unique traditions, cuisine, and attractions</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-language"></i>
+                <h3>Language Guide</h3>
+                <p>Learn essential Portuguese phrases and expressions for your Brazilian adventure</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-plane"></i>
+                <h3>Flight Information</h3>
+                <p>Find the latest information on flights from Europe and USA to Brazil</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-passport"></i>
+                <h3>Travel Tips</h3>
+                <p>Get practical advice on visas, safety, accommodation, and more</p>
+            </div>
+        </section>
+
+        <!-- Regions Section -->
+        <section id="regions" class="regions">
+            <div class="section-header">
+                <h2>Discover Brazil's Regions</h2>
+                <p>Brazil is divided into five distinct regions, each with its own cultural identity, landscapes, and traditions</p>
+            </div>
+            
+            <div class="region-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-region="north">North</button>
+                    <button class="tab-btn" data-region="northeast">Northeast</button>
+                    <button class="tab-btn" data-region="central-west">Central-West</button>
+                    <button class="tab-btn" data-region="southeast">Southeast</button>
+                    <button class="tab-btn" data-region="south">South</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="north">
+                        <div class="region-info">
+                            <div class="region-image">
+                                <img src="images/north-region.jpg" alt="Amazon Rainforest">
+                            </div>
+                            <div class="region-details">
+                                <h3>Norte (North)</h3>
+                                <p>The North of Brazil is home to many of Brazil's indigenous people and encompasses much of the Amazon rainforest. This region offers unique cultural experiences:</p>
+                                <ul>
+                                    <li><strong>Indigenous Heritage:</strong> The Amazon is home to numerous indigenous tribes with their own languages, traditions, and ways of life.</li>
+                                    <li><strong>Folklore:</strong> Brazilian folklore is an important aspect of the North's culture, with annual festivals dedicated to specific legends and beliefs.</li>
+                                    <li><strong>Boi Bumbá Festival:</strong> One of the largest festivals is the Boi Bumbá Party, a three-day celebration that commemorates the legend of a bull that died and was resurrected.</li>
+                                    <li><strong>Manaus:</strong> The largest city in the region hosts several international companies and serves as a gateway to the Amazon.</li>
+                                </ul>
+                                <div class="region-attractions">
+                                    <h4>Must-Visit Places:</h4>
+                                    <div class="attraction-cards">
+                                        <div class="attraction-card">
+                                            <h5>Amazon Rainforest</h5>
+                                            <p>Experience the world's largest rainforest with guided tours and river cruises</p>
+                                        </div>
+                                        <div class="attraction-card">
+                                            <h5>Manaus Opera House</h5>
+                                            <p>Visit this historic theater built during the rubber boom of the late 19th century</p>
+                                        </div>
+                                        <div class="attraction-card">
+                                            <h5>Meeting of Waters</h5>
+                                            <p>See where the Rio Negro and Amazon River run side by side without mixing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="northeast">
+                        <div class="region-info">
+                            <div class="region-image">
+                                <img src="images/northeast-region.jpg" alt="Northeast Beaches">
+                            </div>
+                            <div class="region-details">
+                                <h3>Nordeste (Northeast)</h3>
+                                <p>The Northeast of Brazil has the largest population of African descendants and features a warm climate year-round:</p>
+                                <ul>
+                                    <li><strong>African Influence:</strong> Traces of African culture remain clearly evident in the local music, religion, and food.</li>
+                                    <li><strong>Carnival:</strong> Places such as Salvador and Olinda are well known for their traditional Carnival performances and vibrant street parties.</li>
+                                    <li><strong>Forró Music:</strong> This popular Brazilian genre of music is typical in the northeast and is especially heard during the Festa Junina parties.</li>
+                                    <li><strong>Beaches:</strong> The region boasts stunning beaches that attract tourism and help boost the local economy.</li>
+                                </ul>
+                                <div class="region-attractions">
+                                    <h4>Must-Visit Places:</h4>
+                                    <div class="attraction-cards">
+                                        <div class="attraction-card">
+                                            <h5>Salvador</h5>
+                                            <p>Experience the colorful historic center (Pelourinho) and Afro-Brazilian culture</p>
+                                        </div>
+                                        <div class="attraction-card">
+                                            <h5>Fernando de Noronha</h5>
+                                            <p>Discover this pristine archipelago with some of Brazil's best beaches</p>
+                                        </div>
+                                        <div class="attraction-card">
+                                            <h5>Jericoacoara</h5>
+                                            <p>Visit this beach paradise known for its sand dunes and laid-back atmosphere</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="central-west">
+                        <div class="region-info">
+                            <div class="region-image">
+                                <img src="images/central-west-region.jpg" alt="Brasília">
+                            </div>
+                            <div class="region-details">
+                                <h3>Centro-Oeste (Central-West)</h3>
+                                <p>The Central-West is known for its dry climate and abundance of national parks and exotic wildlife:</p>
+                                <ul>
+                                    <li><strong>Brasília:</strong> Brazil's capital city is located here, where all political decisions that drive and shape the country are made.</li>
+                                    <li><strong>Architecture:</strong> The region showcases some of Brazil's finest architectural monuments designed by the celebrated architect Oscar Niemeyer.</li>
+                                    <li><strong>Indigenous Populations:</strong> Home to many of Brazil's indigenous communities.</li>
+                                    <li><strong>Pantanal:</strong> One of the world's largest tropical wetland areas, offering unique ecological experiences.</li>
+                                </ul>
+                                <div class="region-attractions">
+                                    <h4>Must-Visit Places:</h4>
+                                    <div class="attraction-cards">
+                                        <div class="attraction-card">
+                                            <h5>Brasília</h5>
+                                            <p>Explore Brazil's modernist capital city with its unique architecture</p>
+                                        </div>
+                                        <div class="attraction-card">
+                                            <h5>Pantanal</h5>
+                                            <p>Discover the world's largest tropical wetland area with incredible wildlife</p>
+                                        </div>
+                                        <div class="attraction-card">
+                                            <h5>Chapada dos Veadeiros</h5>
+                                            <p>Hike through this national park with stunning waterfalls and rock formations</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="southeast">
+                        <div class="region-info">
+                            <div class="region-image">
+                                <img src="images/southeast-region.jpg" alt="Rio de Janeiro">
+                            </div>
+                            <div class="region-details">
+                                <h3>Sudeste (Southeast)</h3>
+                                <p>One of the most visited regions in Brazil, the Southeast includes famous cities such as Rio de Janeiro and São Paulo:</p>
+                                <ul>
+                                    <li><strong>Cultural Diversity:</strong> The mix of cultures here is extremely diverse with traces of African and European immigration across the region.</li>
+                                    <li><strong>Japanese Community:</strong> São Paulo has the largest community of Japanese immigrants in the world outside of Japan.</li>
+                                    <li><strong>Carnival:</strong> Rio de Janeiro receives the highest number of tourists in Brazil during Carnival.</li>
+                                    <li><strong>Minas Gerais:</strong> A state known for its homely, hearty food and colonial architecture.</li>
+                                </ul>
+                                <div class="region-attractions">
+                                    <h4>Must-Visit Places:</h4>
+                                    <div class="attraction-cards">
+                                        <div class="attraction-card">
+                                            <h5>Rio de Janeiro</h5>
+                                            <p>Visit the iconic Christ the Redeemer statue and Copacabana beach</p>
+                                        </div>
+                                        <div class="attraction-card">
+                                            <h5>São Paulo</h5>
+                                            <p>Experience Brazil's largest city with world-class museums and restaurants</p>
+                                        </div>
+                                        <div class="attraction-card">
+                                            <h5>Ouro Preto</h5>
+                                            <p>Explore this well-preserved colonial town in Minas Gerais</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="south">
+                        <div class="region-info">
+                            <div class="region-image">
+                                <img src="images/south-region.jpg" alt="Iguazu Falls">
+                            </div>
+                            <div class="region-details">
+                                <h3>Sul (South)</h3>
+                                <p>The South of Brazil is considered the richest region in the country:</p>
+                                <ul>
+                                    <li><strong>European Influence:</strong> The region is heavily influenced by European immigration with typical German architecture, cuisine, and events celebrated each year.</li>
+                                    <li><strong>Demographics:</strong> There is a higher number of fair skin and pale eyes in the south of Brazil than any other region.</li>
+                                    <li><strong>Oktoberfest:</strong> One of the most famous celebrations in the south is the Oktoberfest, a copy of the original festival in Munich.</li>
+                                    <li><strong>Climate:</strong> The climate in the south is temperate, and winters can drop to zero degrees, making it quite different from the tropical image often associated with Brazil.</li>
+                                </ul>
+                                <div class="region-attractions">
+                                    <h4>Must-Visit Places:</h4>
+                                    <div class="attraction-cards">
+                                        <div class="attraction-card">
+                                            <h5>Iguazu Falls</h5>
+                                            <p>Experience one of the world's most spectacular waterfalls</p>
+                                        </div>
+                                        <div class="attraction-card">
+                                            <h5>Florianópolis</h5>
+                                            <p>Enjoy the beautiful beaches and vibrant nightlife of this island city</p>
+                                        </div>
+                                        <div class="attraction-card">
+                                            <h5>Gramado</h5>
+                                            <p>Visit this charming town with European architecture and chocolate shops</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Language Section -->
+        <section id="language" class="language">
+            <div class="section-header">
+                <h2>Learn Brazilian Portuguese</h2>
+                <p>Master these essential phrases to enhance your Brazilian experience</p>
+            </div>
+            
+            <div class="language-content">
+                <div class="phrase-categories">
+                    <button class="category-btn active" data-category="greetings">Greetings</button>
+                    <button class="category-btn" data-category="essentials">Essential Phrases</button>
+                    <button class="category-btn" data-category="travel">Travel & Transportation</button>
+                    <button class="category-btn" data-category="dining">Dining & Food</button>
+                    <button class="category-btn" data-category="emergency">Emergency Phrases</button>
+                </div>
+                
+                <div class="phrase-container">
+                    <div class="phrase-list active" id="greetings">
+                        <div class="phrase-card">
+                            <div class="phrase-english">Hello</div>
+                            <div class="phrase-portuguese">Olá</div>
+                            <div class="phrase-pronunciation">oh-LAH</div>
+                            <button class="play-audio" data-audio="ola"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Good morning</div>
+                            <div class="phrase-portuguese">Bom dia</div>
+                            <div class="phrase-pronunciation">bohn DEE-ah</div>
+                            <button class="play-audio" data-audio="bom-dia"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Good afternoon</div>
+                            <div class="phrase-portuguese">Boa tarde</div>
+                            <div class="phrase-pronunciation">BOH-ah TAR-jee</div>
+                            <button class="play-audio" data-audio="boa-tarde"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Good night</div>
+                            <div class="phrase-portuguese">Boa noite</div>
+                            <div class="phrase-pronunciation">BOH-ah NOY-chee</div>
+                            <button class="play-audio" data-audio="boa-noite"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">How are you?</div>
+                            <div class="phrase-portuguese">Como está?</div>
+                            <div class="phrase-pronunciation">KOH-moh es-TAH</div>
+                            <button class="play-audio" data-audio="como-esta"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">I'm good, and you?</div>
+                            <div class="phrase-portuguese">Estou bem, e você?</div>
+                            <div class="phrase-pronunciation">es-TOH beng, ee voh-SAY</div>
+                            <button class="play-audio" data-audio="estou-bem"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="phrase-list" id="essentials">
+                        <div class="phrase-card">
+                            <div class="phrase-english">Yes</div>
+                            <div class="phrase-portuguese">Sim</div>
+                            <div class="phrase-pronunciation">seen</div>
+                            <button class="play-audio" data-audio="sim"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">No</div>
+                            <div class="phrase-portuguese">Não</div>
+                            <div class="phrase-pronunciation">now</div>
+                            <button class="play-audio" data-audio="nao"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Please</div>
+                            <div class="phrase-portuguese">Por favor</div>
+                            <div class="phrase-pronunciation">por fah-VOR</div>
+                            <button class="play-audio" data-audio="por-favor"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Thank you</div>
+                            <div class="phrase-portuguese">Obrigado (male) / Obrigada (female)</div>
+                            <div class="phrase-pronunciation">oh-bree-GAH-doh / oh-bree-GAH-dah</div>
+                            <button class="play-audio" data-audio="obrigado"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">You're welcome</div>
+                            <div class="phrase-portuguese">De nada</div>
+                            <div class="phrase-pronunciation">jee NAH-dah</div>
+                            <button class="play-audio" data-audio="de-nada"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">I don't understand</div>
+                            <div class="phrase-portuguese">Não entendo</div>
+                            <div class="phrase-pronunciation">now en-TEN-doh</div>
+                            <button class="play-audio" data-audio="nao-entendo"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="phrase-list" id="travel">
+                        <div class="phrase-card">
+                            <div class="phrase-english">Where is...?</div>
+                            <div class="phrase-portuguese">Onde fica...?</div>
+                            <div class="phrase-pronunciation">ON-jee FEE-kah</div>
+                            <button class="play-audio" data-audio="onde-fica"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">How do I get to...?</div>
+                            <div class="phrase-portuguese">Como chego a...?</div>
+                            <div class="phrase-pronunciation">KOH-moh SHEH-goh ah</div>
+                            <button class="play-audio" data-audio="como-chego"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Bus</div>
+                            <div class="phrase-portuguese">Ônibus</div>
+                            <div class="phrase-pronunciation">OH-nee-boos</div>
+                            <button class="play-audio" data-audio="onibus"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Airport</div>
+                            <div class="phrase-portuguese">Aeroporto</div>
+                            <div class="phrase-pronunciation">ah-eh-roh-POR-toh</div>
+                            <button class="play-audio" data-audio="aeroporto"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Beach</div>
+                            <div class="phrase-portuguese">Praia</div>
+                            <div class="phrase-pronunciation">PRY-ah</div>
+                            <button class="play-audio" data-audio="praia"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Hotel</div>
+                            <div class="phrase-portuguese">Hotel</div>
+                            <div class="phrase-pronunciation">oh-TELL</div>
+                            <button class="play-audio" data-audio="hotel"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="phrase-list" id="dining">
+                        <div class="phrase-card">
+                            <div class="phrase-english">Restaurant</div>
+                            <div class="phrase-portuguese">Restaurante</div>
+                            <div class="phrase-pronunciation">hes-tow-RAN-chee</div>
+                            <button class="play-audio" data-audio="restaurante"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Menu</div>
+                            <div class="phrase-portuguese">Cardápio</div>
+                            <div class="phrase-pronunciation">kar-DAH-pee-oh</div>
+                            <button class="play-audio" data-audio="cardapio"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Water</div>
+                            <div class="phrase-portuguese">Água</div>
+                            <div class="phrase-pronunciation">AH-gwah</div>
+                            <button class="play-audio" data-audio="agua"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Coffee</div>
+                            <div class="phrase-portuguese">Café</div>
+                            <div class="phrase-pronunciation">kah-FEH</div>
+                            <button class="play-audio" data-audio="cafe"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">The bill, please</div>
+                            <div class="phrase-portuguese">A conta, por favor</div>
+                            <div class="phrase-pronunciation">ah KON-tah, por fah-VOR</div>
+                            <button class="play-audio" data-audio="a-conta"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Delicious</div>
+                            <div class="phrase-portuguese">Delicioso</div>
+                            <div class="phrase-pronunciation">deh-lee-see-OH-zoh</div>
+                            <button class="play-audio" data-audio="delicioso"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="phrase-list" id="emergency">
+                        <div class="phrase-card">
+                            <div class="phrase-english">Help!</div>
+                            <div class="phrase-portuguese">Socorro!</div>
+                            <div class="phrase-pronunciation">soh-KOH-hoh</div>
+                            <button class="play-audio" data-audio="socorro"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">I need a doctor</div>
+                            <div class="phrase-portuguese">Preciso de um médico</div>
+                            <div class="phrase-pronunciation">preh-SEE-zoh jee oom MEH-jee-koh</div>
+                            <button class="play-audio" data-audio="preciso-medico"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Call the police</div>
+                            <div class="phrase-portuguese">Chame a polícia</div>
+                            <div class="phrase-pronunciation">SHAH-mee ah poh-LEE-see-ah</div>
+                            <button class="play-audio" data-audio="chame-policia"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">I'm lost</div>
+                            <div class="phrase-portuguese">Estou perdido(a)</div>
+                            <div class="phrase-pronunciation">es-TOH per-JEE-doh/dah</div>
+                            <button class="play-audio" data-audio="estou-perdido"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Pharmacy</div>
+                            <div class="phrase-portuguese">Farmácia</div>
+                            <div class="phrase-pronunciation">far-MAH-see-ah</div>
+                            <button class="play-audio" data-audio="farmacia"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                        <div class="phrase-card">
+                            <div class="phrase-english">Hospital</div>
+                            <div class="phrase-portuguese">Hospital</div>
+                            <div class="phrase-pronunciation">os-pee-TAL</div>
+                            <button class="play-audio" data-audio="hospital"><i class="fas fa-volume-up"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="language-practice">
+                    <h3>Practice Your Portuguese</h3>
+                    <div class="practice-quiz">
+                        <div class="quiz-container">
+                            <div class="quiz-question">
+                                <p>How would you say "Thank you" in Portuguese?</p>
+                                <div class="quiz-options">
+                                    <button class="quiz-option" data-correct="false">De nada</button>
+                                    <button class="quiz-option" data-correct="true">Obrigado/Obrigada</button>
+                                    <button class="quiz-option" data-correct="false">Por favor</button>
+                                    <button class="quiz-option" data-correct="false">Bom dia</button>
+                                </div>
+                                <div class="quiz-feedback"></div>
+                            </div>
+                            <button class="next-question">Next Question</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flights Section -->
+        <section id="flights" class="flights">
+            <div class="section-header">
+                <h2>Flight Information</h2>
+                <p>Find the latest information on flights from Europe and USA to Brazil</p>
+            </div>
+            
+            <div class="flight-tabs">
+                <div class="tab-buttons">
+                    <button class="flight-tab-btn active" data-flight="europe">Europe to Brazil</button>
+                    <button class="flight-tab-btn" data-flight="usa">USA to Brazil</button>
+                </div>
+                
+                <div class="flight-content">
+                    <div class="flight-tab-pane active" id="europe-flights">
+                        <div class="flight-info">
+                            <h3>Europe to Brazil Flights</h3>
+                            <p>According to recent data, there are approximately 2,766 passenger flights scheduled on routes between Europe and Brazil per month, representing an average of almost 90 per day.</p>
+                            
+                            <div class="flight-stats">
+                                <div class="stat-card">
+                                    <i class="fas fa-plane-departure"></i>
+                                    <h4>Monthly Flights</h4>
+                                    <p>2,766</p>
+                                </div>
+                                <div class="stat-card">
+                                    <i class="fas fa-chair"></i>
+                                    <h4>Available Seats</h4>
+                                    <p>853,501</p>
+                                </div>
+                                <div class="stat-card">
+                                    <i class="fas fa-chart-line"></i>
+                                    <h4>Year Growth</h4>
+                                    <p>+13%</p>
+                                </div>
+                            </div>
+                            
+                            <h4>Top Airlines Operating Europe-Brazil Routes</h4>
+                            <div class="airlines">
+                                <div class="airline-card">
+                                    <img src="images/tap-logo.png" alt="TAP Air Portugal">
+                                    <h5>TAP Air Portugal</h5>
+                                    <p>The Portuguese flag carrier operates the most flights between Europe and Brazil with 780 monthly flights.</p>
+                                    <p>Main routes include Lisbon to São Paulo, Rio de Janeiro, Recife, and Fortaleza.</p>
+                                </div>
+                                <div class="airline-card">
+                                    <img src="images/other-airlines.png" alt="Other European Airlines">
+                                    <h5>Other Major Airlines</h5>
+                                    <p>Several other European carriers offer regular service to Brazil, including Air France, Lufthansa, Iberia, and British Airways.</p>
+                                </div>
+                            </div>
+                            
+                            <h4>Key Airports</h4>
+                            <div class="airports">
+                                <div class="airport-card">
+                                    <h5>In Europe</h5>
+                                    <p>Lisbon (Portugal) is the dominant hub for flights to Brazil, followed by Madrid, Paris, and Frankfurt.</p>
+                                </div>
+                                <div class="airport-card">
+                                    <h5>In Brazil</h5>
+                                    <p>São Paulo Guarulhos (GRU) and Rio de Janeiro (GIG) are the main international gateways for European flights.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flight-tab-pane" id="usa-flights">
+                        <div class="flight-info">
+                            <h3>USA to Brazil Flights</h3>
+                            <p>Six airlines operate nonstop flights between the United States and Brazil, providing hundreds of weekly flights connecting the two nations.</p>
+                            
+                            <h4>Top Airlines Operating USA-Brazil Routes</h4>
+                            <div class="airlines">
+                                <div class="airline-card">
+                                    <img src="images/american-logo.png" alt="American Airlines">
+                                    <h5>American Airlines</h5>
+                                    <p>One of the leading carriers on USA-Brazil routes, operating multiple daily flights to major Brazilian cities.</p>
+                                </div>
+                                <div class="airline-card">
+                                    <img src="images/united-logo.png" alt="United Airlines">
+                                    <h5>United Airlines</h5>
+                                    <p>Offers extensive service between the US and Brazil, connecting multiple US cities to Brazilian destinations.</p>
+                                </div>
+                                <div class="airline-card">
+                                    <img src="images/delta-logo.png" alt="Delta Air Lines">
+                                    <h5>Delta Air Lines</h5>
+                                    <p>Significant player in the USA-Brazil market with seasonal direct flights between Rio de Janeiro and New York City.</p>
+                                </div>
+                                <div class="airline-card">
+                                    <img src="images/latam-logo.png" alt="LATAM Airlines">
+                                    <h5>LATAM Airlines</h5>
+                                    <p>Brazil's largest airline with extensive connections to the US, including a nonstop flight between São Paulo and Los Angeles.</p>
+                                </div>
+                            </div>
+                            
+                            <h4>Key Routes and Airports</h4>
+                            <div class="airports">
+                                <div class="airport-card">
+                                    <h5>Main US Departure Points</h5>
+                                    <p>Miami, New York, Atlanta, Houston, and Dallas offer the most connections to Brazil.</p>
+                                </div>
+                                <div class="airport-card">
+                                    <h5>Main Brazilian Destinations</h5>
+                                    <p>São Paulo (GRU) and Rio de Janeiro (GIG) receive the majority of flights from the United States.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flight-search">
+                <h3>Find Your Flight to Brazil</h3>
+                <p>Use this tool to search for flights from your location to Brazil</p>
+                
+                <div class="search-form">
+                    <div class="form-group">
+                        <label for="departure">Departure City</label>
+                        <input type="text" id="departure" placeholder="e.g., New York, London">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination in Brazil</label>
+                        <select id="destination">
+                            <option value="">Select a city</option>
+                            <option value="GRU">São Paulo (GRU)</option>
+                            <option value="GIG">Rio de Janeiro (GIG)</option>
+                            <option value="BSB">Brasília (BSB)</option>
+                            <option value="REC">Recife (REC)</option>
+                            <option value="FOR">Fortaleza (FOR)</option>
+                            <option value="SSA">Salvador (SSA)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="departure-date">Departure Date</label>
+                        <input type="date" id="departure-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="return-date">Return Date</label>
+                        <input type="date" id="return-date">
+                    </div>
+                    <button class="search-btn">Search Flights</button>
+                </div>
+                
+                <div class="search-results">
+                    <!-- Results will be displayed here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Info Section -->
+        <section id="travel-info" class="travel-info">
+            <div class="section-header">
+                <h2>Travel Information</h2>
+                <p>Essential information for planning your trip to Brazil</p>
+            </div>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-passport"></i>
+                    <h3>Visa Requirements</h3>
+                    <p>Citizens of many countries, including the USA, Canada, Australia, and EU member states, do not need a visa for stays up to 90 days for tourism or business purposes.</p>
+                    <p>Always check the latest requirements with the Brazilian consulate in your country before traveling.</p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safety Tips</h3>
+                    <p>Brazil is generally welcoming to tourists, but like any destination, it's important to stay aware of your surroundings, especially in major cities.</p>
+                    <ul>
+                        <li>Keep valuables secure and out of sight</li>
+                        <li>Use official taxis or ride-sharing apps</li>
+                        <li>Stay in well-lit, populated areas at night</li>
+                        <li>Keep copies of important documents</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Currency</h3>
+                    <p>The Brazilian currency is the Real (BRL), pronounced "hey-al" (plural: Reais, pronounced "hey-ice").</p>
+                    <p>Credit cards are widely accepted in urban areas, but it's advisable to carry some cash, especially when traveling to remote locations.</p>
+                    <p>ATMs are readily available in cities and towns.</p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-plug"></i>
+                    <h3>Electricity</h3>
+                    <p>Brazil uses 127V and 220V electricity. Outlets are typically type N (round pins with a grounding pin).</p>
+                    <p>Travelers from North America and Europe may need adapters and possibly voltage converters.</p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Connectivity</h3>
+                    <p>Mobile coverage is good in urban areas but can be limited in remote regions.</p>
+                    <p>Wi-Fi is widely available in hotels, restaurants, and cafes in major cities.</p>
+                    <p>Consider purchasing a local SIM card for affordable data access during your stay.</p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Best Time to Visit</h3>
+                    <p>Brazil is a year-round destination, but the best time to visit depends on your region of interest:</p>
+                    <ul>
+                        <li>Amazon: June to November (dry season)</li>
+                        <li>Northeast beaches: September to March</li>
+                        <li>Rio de Janeiro: May to October</li>
+                        <li>Pantanal wildlife: July to October</li>
+                    </ul>
+                    <p>Carnival typically takes place in February or early March.</p>
+                </div>
+            </div>
+            
+            <div class="accommodation-section">
+                <h3>Accommodation Options</h3>
+                <p>Brazil offers a wide range of accommodation options to suit all budgets and preferences:</p>
+                
+                <div class="accommodation-types">
+                    <div class="accommodation-card">
+                        <i class="fas fa-hotel"></i>
+                        <h4>Hotels</h4>
+                        <p>From international luxury chains to boutique hotels, Brazil's major cities and tourist destinations offer plenty of options.</p>
+                    </div>
+                    <div class="accommodation-card">
+                        <i class="fas fa-home"></i>
+                        <h4>Pousadas</h4>
+                        <p>These charming guesthouses or inns are often family-run and provide a more authentic Brazilian experience.</p>
+                    </div>
+                    <div class="accommodation-card">
+                        <i class="fas fa-building"></i>
+                        <h4>Apartments</h4>
+                        <p>Short-term rental apartments are popular in cities and beach destinations, offering more space and kitchen facilities.</p>
+                    </div>
+                    <div class="accommodation-card">
+                        <i class="fas fa-campground"></i>
+                        <h4>Eco-Lodges</h4>
+                        <p>Particularly in the Amazon and Pantanal regions, eco-lodges offer immersive nature experiences with varying levels of comfort.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Discover Brazil Logo">
+                <h2>Discover Brazil</h2>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#regions">Regions</a></li>
+                        <li><a href="#language">Portuguese</a></li>
+                        <li><a href="#flights">Flights</a></li>
+                        <li><a href="#travel-info">Travel Info</a></li>
+                    </ul>
+                </div>
+                
+                <div class="link-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                
+                <div class="link-column">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Discover Brazil. All rights reserved.</p>
+            <p>Sources: The Culture Trip, South America Travel, Trafalgar Tours, FluentU, Simple Flying</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/pwa-register.js"></script>
+</body>
+</html>
