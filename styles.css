@@ -1,0 +1,1020 @@
+/* Main Styles for Discover Brazil App */
+
+/* Base Styles */
+:root {
+    --primary-color: #009c3b; /* Brazilian flag green */
+    --secondary-color: #ffdf00; /* Brazilian flag yellow */
+    --accent-color: #3d9be9; /* Light blue */
+    --dark-color: #002776; /* Brazilian flag blue */
+    --light-color: #ffffff;
+    --text-color: #333333;
+    --background-color: #f8f9fa;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--dark-color);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.primary:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.secondary:hover {
+    background-color: #e6c700;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #666;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--light-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 1.5rem;
+}
+
+.nav-menu a {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 0.5rem;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--text-color);
+    transition: var(--transition);
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 39, 118, 0.7), rgba(0, 156, 59, 0.7)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 5rem 5%;
+    background-color: var(--light-color);
+}
+
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+/* Regions Section */
+.regions {
+    padding: 5rem 5%;
+    background-color: var(--background-color);
+}
+
+.region-tabs {
+    margin-top: 3rem;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    padding: 12px 24px;
+    background-color: var(--light-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.tab-btn:hover, .tab-btn.active {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.tab-content {
+    position: relative;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.region-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.region-image {
+    height: 100%;
+}
+
+.region-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.region-details {
+    padding: 2rem;
+}
+
+.region-details h3 {
+    font-size: 2rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.region-details p {
+    margin-bottom: 1.5rem;
+}
+
+.region-details ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.region-details li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+
+.region-attractions {
+    margin-top: 2rem;
+}
+
+.region-attractions h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+.attraction-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.attraction-card {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.attraction-card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+/* Language Section */
+.language {
+    padding: 5rem 5%;
+    background-color: var(--light-color);
+}
+
+.language-content {
+    margin-top: 3rem;
+}
+
+.phrase-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.category-btn {
+    padding: 10px 20px;
+    background-color: var(--background-color);
+    border: none;
+    border-radius: 30px;
+    color: var(--text-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.category-btn:hover, .category-btn.active {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.phrase-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.phrase-list {
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.phrase-list.active {
+    display: grid;
+}
+
+.phrase-card {
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    position: relative;
+}
+
+.phrase-english {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.phrase-portuguese {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.phrase-pronunciation {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+.play-audio {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--secondary-color);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.play-audio:hover {
+    background-color: #e6c700;
+}
+
+.language-practice {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.language-practice h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+}
+
+.practice-quiz {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+}
+
+.quiz-question p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.quiz-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.quiz-option {
+    padding: 1rem;
+    background-color: var(--light-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.quiz-option:hover {
+    background-color: #f0f0f0;
+}
+
+.quiz-option.correct {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.quiz-option.incorrect {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.quiz-feedback {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.next-question {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.next-question:hover {
+    background-color: var(--dark-color);
+}
+
+/* Flights Section */
+.flights {
+    padding: 5rem 5%;
+    background-color: var(--background-color);
+}
+
+.flight-tabs {
+    margin-top: 3rem;
+}
+
+.flight-tab-btn {
+    padding: 12px 24px;
+    background-color: var(--light-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.flight-tab-btn:hover, .flight-tab-btn.active {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.flight-content {
+    margin-top: 2rem;
+}
+
+.flight-tab-pane {
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.flight-tab-pane.active {
+    display: block;
+}
+
+.flight-info {
+    background-color: var(--light-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+}
+
+.flight-info h3 {
+    font-size: 2rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.flight-info p {
+    margin-bottom: 1.5rem;
+}
+
+.flight-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.stat-card {
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.stat-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.stat-card p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.flight-info h4 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    margin: 2rem 0 1rem;
+}
+
+.airlines, .airports {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.airline-card, .airport-card {
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.airline-card img {
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.airline-card h5, .airport-card h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.flight-search {
+    margin-top: 4rem;
+    background-color: var(--light-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+}
+
+.flight-search h3 {
+    font-size: 1.8rem;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.flight-search p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-btn {
+    grid-column: span 2;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.search-btn:hover {
+    background-color: var(--dark-color);
+}
+
+/* Travel Info Section */
+.travel-info {
+    padding: 5rem 5%;
+    background-color: var(--light-color);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.info-card {
+    background-color: var(--background-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.info-card h3 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.info-card p {
+    margin-bottom: 1rem;
+}
+
+.info-card ul {
+    padding-left: 1.5rem;
+}
+
+.info-card li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+
+.accommodation-section {
+    margin-top: 4rem;
+}
+
+.accommodation-section h3 {
+    font-size: 1.8rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.accommodation-section p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.accommodation-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.accommodation-card {
+    background-color: var(--background-color);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+.accommodation-card:hover {
+    transform: translateY(-5px);
+}
+
+.accommodation-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.accommodation-card h4 {
+    font-size: 1.3rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 4rem 5% 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.footer-logo h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.link-column h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.link-column ul li {
+    margin-bottom: 0.8rem;
+}
+
+.link-column a {
+    color: var(--light-color);
+}
+
+.link-column a:hover {
+    color: var(--secondary-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .region-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .region-image {
+        height: 300px;
+    }
+    
+    .attraction-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-logo {
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--light-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        padding: 2rem 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        margin: 1.5rem 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+        padding: 3rem 1rem;
+    }
+    
+    .regions, .language, .flights, .travel-info {
+        padding: 3rem 1rem;
+    }
+    
+    .tab-buttons, .phrase-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tab-btn, .category-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .phrase-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .flight-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .search-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .search-btn {
+        grid-column: 1;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .attraction-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .quiz-options {
+        grid-template-columns: 1fr;
+    }
+}
